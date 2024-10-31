@@ -59,7 +59,7 @@ body {
     color: white;
     text-align: center;
     font-size: 60px;
-    text-shadow: 0px 0px 20px #cccccc7e;
+    text-shadow: 0px 0px 20px #cccccc25;
 }
 
 .parallaxas {
@@ -92,6 +92,7 @@ body {
 .info1 h1 {
     color: white;
     font-size: 70;
+    text-shadow: 0px 0px 20px #cccccc25;
 }
 
 .info2 {
@@ -115,6 +116,7 @@ footer {
 
 footer h2 {
     color: white;
+    text-shadow: 0px 0px 20px #cccccc25;
 }
 
 @media screen and (max-width: 768px) {
