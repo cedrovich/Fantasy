@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Bebas Neue';
+}
+
+body {
+    background-color: #000;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    color: #333;
+}
+
+.ancho {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0px 0px 20px #cccccc6b;
+}
+
+.logo {
+    width: 250px;
+}
+
+.logo img {
+    width: 100%;
+    display: inline-block;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    display: inline-block;
+    border: 2px #000 solid;
+}
+
+.navbar a:hover {
+    border-bottom: 2px #ff4b44 solid ;
+}
+
+.anuncio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.anuncio h1 {
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    text-shadow: 0px 0px 20px #cccccc7e;
+}
+
+.parallaxas {
+    background-image: url(images/hero.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    position: relative;
+}
+
+.parallaxas::before {
+    content: "";
+    position: absolute;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 100%);
+    width: 100%;
+    height: 400px;
+    z-index: 3;
+    top: 0;
+    left: 0;
+}
+
+.info1 {
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    z-index: 11;
+}
+
+.info1 h1 {
+    color: white;
+    font-size: 70;
+}
+
+.info2 {
+    position: absolute;
+    top: 50%;
+    right: 100px;
+    transform: translate(0, -50%);
+    z-index: 9;
+}
+
+.info2 img {
+    height: 400px;
+}
+
+footer {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer h2 {
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        display: none;
+    }
+
+    .anuncio {
+        height: 170px;
+    }
+
+    .anuncio h1 {
+        font-size: 50px;
+    }
+
+    .info1 {
+        top: 70%;
+        left: 180px;
+    }
+
+    .info1 h1 {
+        font-size: 45px;
+    }
+}
